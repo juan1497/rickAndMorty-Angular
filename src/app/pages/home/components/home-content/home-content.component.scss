@@ -1,0 +1,25 @@
+div{
+    display: flex;
+    justify-content: center;
+    img{
+        max-width: 70%;
+        border-radius: 10px;
+    }
+}
+div{
+    display: flex;
+    justify-content: center;
+
+    p{
+        font-size: 25px;
+        text-align: center;
+    }
+}
+@media screen and(max-width:768px) {
+    div img{
+        max-width: 90%;
+        border-radius: 10px;
+
+    }
+    
+}

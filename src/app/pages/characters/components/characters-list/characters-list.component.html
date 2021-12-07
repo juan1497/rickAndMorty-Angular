@@ -1,0 +1,13 @@
+<div *ngIf="charactersList">
+    <!-- <h3>Personajes de Rick And Morty</h3> -->
+    <ul>
+      <li *ngFor="let character of charactersList">
+        <h4> {{ character.name }}</h4>
+        <a [routerLink]="[character.id]"><img [src]="character.image" [alt]="character.name"></a>
+      </li>
+  </ul>
+  <div class="buttons">
+    <button class="prev"*ngIf="prev"(click)="moreCharacter(prev)"><img src="https://img.icons8.com/material/40/26e07f/arrow-pointing-left--v2.png" ></button>
+    <button class="next"*ngIf="next" (click)="moreCharacter(next)"><img src="https://img.icons8.com/material/40/26e07f/arrow.png" ></button>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img{
+        align-self: center;
+        max-width: 90%;
+        min-width: 50%;
+    }
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        list-style: none;
+        li{
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}

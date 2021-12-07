@@ -1,0 +1,40 @@
+div{
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        li{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            border: 2px solid #35b13c;
+            border-radius: 10px;
+            width: 350px;
+            h4{
+                text-align: center;
+                span{
+                    font-size: 20px;
+                    font-weight: bold;
+                    font-style: italic;
+                }
+            }
+            img{
+                max-width: 300px;
+                align-self: center;
+            }
+            p{
+                font-size: 18px;
+                text-align: center;
+                
+                span{
+                    
+                    font-size: 20px;
+                    font-weight: bold;
+                    font-style: italic;
+                }
+            }
+        }
+    }
+}

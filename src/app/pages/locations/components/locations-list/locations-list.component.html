@@ -1,0 +1,17 @@
+<div *ngIf="locationList">
+    <!-- <h3>Localizaciones</h3> -->
+    <ul>
+      <li *ngFor="let location of locationList">
+        <h4> {{ location.name }}</h4>
+         
+          <a [routerLink]="[location.id]">
+            <img src="{{location.image}}" [alt]="location.name">
+          </a>
+        
+      </li>
+  </ul>
+  <div class="buttons">
+    <button class="prev"*ngIf="prev"(click)="moreLocations(prev)"><img src="https://img.icons8.com/material/40/26e07f/arrow-pointing-left--v2.png" ></button>
+    <button class="next"*ngIf="next" (click)="moreLocations(next)"><img src="https://img.icons8.com/material/40/26e07f/arrow.png" ></button>
+  </div>
+</div>

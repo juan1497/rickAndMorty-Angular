@@ -1,0 +1,48 @@
+div{
+    h3{
+        text-align: center;
+        font-size: 35px;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 0;
+        li{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            h4{
+                text-align: center;
+                font-size: 22px;
+            }
+            a{
+                text-align: center;
+                img{
+                    
+                    max-width: 80%;
+                    border-radius: 7px;
+                }
+            }
+        }
+    }
+    .buttons{
+        display: flex;
+        justify-content: center;
+        .prev{
+            border-style: none;
+            background: none;
+            &:hover{
+                cursor:grab;
+            }
+        }
+        .next{
+            border-style: none;
+            background: none;
+            &:hover{
+                cursor:grab;
+            }
+        }
+    }
+}

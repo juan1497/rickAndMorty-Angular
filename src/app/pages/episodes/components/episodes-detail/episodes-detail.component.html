@@ -1,0 +1,11 @@
+<div>
+    <ul>
+        <li>
+        <h4>Nombre del episodio: <span>{{ episode.name }}</span> </h4>
+        <img [src]="episode.image" [alt]="episode.episode">
+        <p>Creado: <span>{{episode.created|date:"longDate"}}</span> </p>
+        <p>Emision del episodio : <span>{{episode.air_date}}</span></p>
+        <p>Nº de Personajes que participan: <span>{{episode.characters}}</span></p>
+        </li>
+    </ul>
+</div>
